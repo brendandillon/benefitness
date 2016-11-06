@@ -1,4 +1,5 @@
 class Team < ApplicationRecord
+  has_many :users
   before_create :generate_code
 
   def generate_code

@@ -1,3 +1,4 @@
-example_id                                      | status | run_time        |
------------------------------------------------ | ------ | --------------- |
-./spec/features/admin_creates_team_spec.rb[1:1] | passed | 0.28902 seconds |
+example_id                                         | status | run_time        |
+-------------------------------------------------- | ------ | --------------- |
+./spec/features/admin_creates_team_spec.rb[1:1]    | passed | 0.27767 seconds |
+./spec/features/guest_creates_account_spec.rb[1:1] | passed | 0.06955 seconds |
