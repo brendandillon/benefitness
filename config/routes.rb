@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   put '/account', to: 'account#edit'
 
   resources :users, only: [:new, :create, :update]
-  resources :sessions, only: [:create]
+  resources :sessions, only: [:create, :destroy]
 
   namespace :admin do
     resources :teams, only: [:new, :create, :show]
