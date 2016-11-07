@@ -1,9 +1,9 @@
 FactoryGirl.define do
   factory :workout do
-    activity nil
+    activity
     time_elapsed 1
     calories_burned 1
     distance 1.5
-    user nil
+    user
   end
 end

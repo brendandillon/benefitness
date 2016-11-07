@@ -1,9 +1,10 @@
 example_id                                         | status | run_time        |
 -------------------------------------------------- | ------ | --------------- |
-./spec/features/admin_creates_team_spec.rb[1:1]    | passed | 0.08475 seconds |
-./spec/features/guest_creates_account_spec.rb[1:1] | passed | 0.07358 seconds |
-./spec/features/user_logs_in_spec.rb[1:1]          | passed | 0.05269 seconds |
-./spec/features/user_logs_out_spec.rb[1:1]         | passed | 0.06761 seconds |
-./spec/features/user_logs_workout_spec.rb[1:1]     | passed | 0.39313 seconds |
-./spec/features/user_updates_account_spec.rb[1:1]  | passed | 0.11632 seconds |
-./spec/features/user_views_account_spec.rb[1:1]    | passed | 0.04361 seconds |
+./spec/features/admin_creates_team_spec.rb[1:1]    | passed | 0.06317 seconds |
+./spec/features/guest_creates_account_spec.rb[1:1] | passed | 0.30472 seconds |
+./spec/features/user_logs_in_spec.rb[1:1]          | passed | 0.05136 seconds |
+./spec/features/user_logs_out_spec.rb[1:1]         | passed | 0.05156 seconds |
+./spec/features/user_logs_workout_spec.rb[1:1]     | passed | 0.06776 seconds |
+./spec/features/user_sees_dashboard_spec.rb[1:1]   | passed | 0.0523 seconds  |
+./spec/features/user_updates_account_spec.rb[1:1]  | passed | 0.09848 seconds |
+./spec/features/user_views_account_spec.rb[1:1]    | passed | 0.05492 seconds |
