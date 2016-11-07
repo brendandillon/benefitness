@@ -5,6 +5,7 @@ Rails.application.routes.draw do
 
   resources :users, only: [:new, :create, :update]
   resources :sessions, only: [:create, :destroy]
+  resources :workouts, only: [:index, :new, :create]
 
   namespace :admin do
     resources :teams, only: [:new, :create, :show]

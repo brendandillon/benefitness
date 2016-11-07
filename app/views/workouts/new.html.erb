@@ -1,0 +1,15 @@
+<%= form_for @workout do |f| %>
+  <%= f.label :activity %>
+  <%= collection_select(:workout, :activity_id, Activity.all, :id, :name, prompt: true) %> 
+  <%# Get a date picker up in here %>
+  <%= f.label :distance %>
+  <%= f.text_field :distance %> miles
+  <%= f.label :duration %>
+  <%= f.fields_for :time_elapsed do |time_fields| %>
+    <%= time_fields.text_field :hours %> hours
+    <%= time_fields.text_field :minutes %> minutes
+  <% end %>
+  <%= f.label :calories_burned %>
+  <%= f.text_field :calories_burned %>
+  <%= f.submit 'Add workout' %>
+<% end %>
