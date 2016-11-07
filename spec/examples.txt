@@ -1,7 +1,7 @@
 example_id                                         | status | run_time        |
 -------------------------------------------------- | ------ | --------------- |
-./spec/features/admin_creates_team_spec.rb[1:1]    | passed | 0.0515 seconds  |
-./spec/features/guest_creates_account_spec.rb[1:1] | passed | 0.08188 seconds |
-./spec/features/user_logs_in_spec.rb[1:1]          | passed | 0.0444 seconds  |
-./spec/features/user_updates_account_spec.rb[1:1]  | failed | 0.28988 seconds |
-./spec/features/user_views_account_spec.rb[1:1]    | passed | 0.05554 seconds |
+./spec/features/admin_creates_team_spec.rb[1:1]    | passed | 0.05581 seconds |
+./spec/features/guest_creates_account_spec.rb[1:1] | passed | 0.27017 seconds |
+./spec/features/user_logs_in_spec.rb[1:1]          | passed | 0.03969 seconds |
+./spec/features/user_updates_account_spec.rb[1:1]  | failed | 0.09856 seconds |
+./spec/features/user_views_account_spec.rb[1:1]    | passed | 0.03127 seconds |

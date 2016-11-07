@@ -1,3 +1,4 @@
 <h1>My Account</h1>
 <%= current_user.full_name %>
 <%= current_user.team.name %>
+<%= link_to "Update Account", account_path, method: :put %>

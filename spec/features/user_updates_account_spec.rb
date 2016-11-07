@@ -12,7 +12,7 @@ RSpec.describe "A user updates their account" do
     click_on 'Update Account'
 
     fill_in 'user_email', with: 'almond@ebay.horse'
-    click_on 'Update Account'
+    click_on 'Update'
     click_on 'Log out'
 
     fill_in 'session_email', with: 'almond@ebay.horse'
