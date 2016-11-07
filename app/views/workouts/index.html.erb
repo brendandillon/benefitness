@@ -1,0 +1,8 @@
+<% @workouts.each do |workout| %>
+  <div class="workout">
+    <%= workout.activity.name %>
+    <%= workout.distance %> miles
+    <%= workout.format_time %>
+    <%= workout.calories_burned %> calories burned
+  </div>
+<% end %>
