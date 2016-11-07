@@ -26,7 +26,7 @@ class WorkoutsController < ApplicationController
 
     def minutes_elapsed
       time = params[:workout][:time_elapsed]
-      time[:hours] * 60 +
-      time[:minutes]
+      time[:hours].to_i * 60 +
+      time[:minutes].to_i
     end
 end
