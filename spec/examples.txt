@@ -1,12 +1,13 @@
-example_id                                         | status | run_time        |
--------------------------------------------------- | ------ | --------------- |
-./spec/features/admin_creates_team_spec.rb[1:1]    | passed | 0.04837 seconds |
-./spec/features/guest_creates_account_spec.rb[1:1] | passed | 0.047 seconds   |
-./spec/features/user_logs_in_spec.rb[1:1]          | passed | 0.04165 seconds |
-./spec/features/user_logs_out_spec.rb[1:1]         | passed | 0.29009 seconds |
-./spec/features/user_logs_workout_spec.rb[1:1]     | passed | 0.11826 seconds |
-./spec/features/user_sees_dashboard_spec.rb[1:1]   | passed | 0.02565 seconds |
-./spec/features/user_updates_account_spec.rb[1:1]  | passed | 0.13251 seconds |
-./spec/features/user_views_account_spec.rb[1:1]    | passed | 0.02645 seconds |
-./spec/services/fitbit_service_spec.rb[1:1]        | passed | 0.01923 seconds |
-./spec/services/fitbit_service_spec.rb[1:2]        | passed | 0.01808 seconds |
+example_id                                           | status | run_time        |
+---------------------------------------------------- | ------ | --------------- |
+./spec/features/admin_creates_team_spec.rb[1:1]      | passed | 0.05105 seconds |
+./spec/features/guest_creates_account_spec.rb[1:1]   | passed | 0.23958 seconds |
+./spec/features/user_logs_in_spec.rb[1:1]            | passed | 0.03991 seconds |
+./spec/features/user_logs_out_spec.rb[1:1]           | passed | 0.04854 seconds |
+./spec/features/user_logs_workout_spec.rb[1:1]       | passed | 0.06063 seconds |
+./spec/features/user_sees_dashboard_spec.rb[1:1]     | passed | 0.02605 seconds |
+./spec/features/user_updates_account_spec.rb[1:1]    | passed | 0.1029 seconds  |
+./spec/features/user_views_account_spec.rb[1:1]      | passed | 0.03134 seconds |
+./spec/features/user_views_own_workouts_spec.rb[1:1] | failed | 0.03496 seconds |
+./spec/services/fitbit_service_spec.rb[1:1]          | passed | 0.01231 seconds |
+./spec/services/fitbit_service_spec.rb[1:2]          | passed | 0.0919 seconds  |
