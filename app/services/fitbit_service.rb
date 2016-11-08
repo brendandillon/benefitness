@@ -43,8 +43,8 @@ class FitbitService
     end
 
     def load_workouts_for_day(user, day)
-      workouts = workouts_for_day(user, day)
-      WorkoutService.import(workouts)
+      workouts = workouts_for_day(user, day)[:activities]
+      WorkoutService.import(workouts, day, user)
     end
 
     def workouts_for_day(user, day)

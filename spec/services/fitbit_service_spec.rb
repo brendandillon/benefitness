@@ -14,6 +14,7 @@ RSpec.describe "Fitbit Service" do
   end
 
   it 'imports workouts' do
+    FactoryGirl.create(:activity, name: 'Running')
     user = FactoryGirl.create(:user, 
                               fitbit_access_token: '1234',
                               fitbit_refresh_token: '4567',
@@ -32,7 +33,7 @@ RSpec.describe "Fitbit Service" do
               hasStartTime:true,
               isFavorite:true,
               logId:1154701,
-              name:"Treadmill, 0% Incline",
+              name:"Running",
               startTime:"00:25",
               steps:3783
           }
