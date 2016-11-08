@@ -12,11 +12,11 @@ RSpec.describe 'A user views their own workouts' do
     visit '/'
     click_on 'My Workouts'
     
-    expect(page).to have_content('5 miles')
-    expect(page).to have_content('2 miles')
-    expect(page).not_to have_content('43 miles')
+    expect(page).to have_content('5.0 miles')
+    expect(page).to have_content('2.0 miles')
+    expect(page).not_to have_content('43.0 miles')
     within('.summary') do
-      expect(page).to have_content('7 miles')
+      expect(page).to have_content('7.0 miles')
     end
   end
 end

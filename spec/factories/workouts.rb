@@ -5,5 +5,6 @@ FactoryGirl.define do
     calories_burned 1
     distance 1.5
     user
+    date Date.today
   end
 end
