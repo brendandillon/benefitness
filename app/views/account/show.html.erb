@@ -2,3 +2,4 @@
 <%= current_user.full_name %>
 <%= current_user.team.name %>
 <%= link_to "Update Account", account_path, method: :put %>
+<%= link_to "Sync with Fitbit", "https://www.fitbit.com/oauth2/authorize?response_type=code&scope=activity&client_id=#{ENV['fitbit_client_id']}" %>
