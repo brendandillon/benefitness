@@ -4,6 +4,11 @@ class SessionsController < ApplicationController
     
     if @user.authenticate(params[:session][:password])
       session[:user_id] = @user.id
+      if @user.fitbit_id
+        fitbit = FitbitService.new
+        fitbit.import_workouts(@user)
+      end
+      @user.update(last_logged_in: Date.today)
     end
 
     redirect_to root_path
