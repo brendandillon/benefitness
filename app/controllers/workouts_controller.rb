@@ -14,6 +14,7 @@ class WorkoutsController < ApplicationController
 
   def index
     @workouts = current_user.workouts.where('date > ?', Date.today - 7)
+    @total_distance = @workouts.sum(:distance)
   end
 
   private
