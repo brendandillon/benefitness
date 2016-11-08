@@ -8,6 +8,7 @@ class SessionsController < ApplicationController
         fitbit = FitbitService.new
         fitbit.import_workouts(@user)
       end
+      @user.update(last_logged_in: Date.today)
     end
 
     redirect_to root_path

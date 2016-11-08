@@ -52,8 +52,9 @@ class FitbitService
     end
 
     def get_activities(user,day)
+      formatted_day = day.strftime("%Y-%m-%d")
       conn.get do |req|
-        req.url "1/user/#{user.fitbit_id}/activities/date/#{day}.json"
+        req.url "1/user/#{user.fitbit_id}/activities/date/#{formatted_day}.json"
         req.headers['Authorization'] = "Bearer #{user.fitbit_access_token}"
       end
     end
