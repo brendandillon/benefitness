@@ -9,12 +9,13 @@ class FitbitService
     tokens = get_tokens
     user.update(fitbit_access_token: tokens[:access_token])
     user.update(fitbit_refresh_token: tokens[:refresh_token])
+    user.update(fitbit_id: tokens[:user_id])
   end
 
   def import_workouts(user)
     last_day = user.last_logged_in
     num_of_days = Date.today - last_day
-    (num_of_days + 1).times do |i|
+    (num_of_days.to_i + 1).times do |i|
       load_workouts_for_day(user, last_day + i)
     end
   end
@@ -42,11 +43,15 @@ class FitbitService
     end
 
     def load_workouts_for_day(user, day)
-      workouts = JSON.parse(workouts_for_day(user, day).body, symbolize_names: true)
+      workouts = workouts_for_day(user, day)
       WorkoutService.import(workouts)
     end
 
     def workouts_for_day(user, day)
+      JSON.parse(get_activities(user, day).body, symbolize_names: true)
+    end
+
+    def get_activities(user,day)
       conn.get do |req|
         req.url "1/user/#{user.fitbit_id}/activities/date/#{day}.json"
         req.headers['Authorization'] = "Bearer #{user.fitbit_access_token}"

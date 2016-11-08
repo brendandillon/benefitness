@@ -4,22 +4,23 @@ RSpec.describe "Fitbit Service" do
   it 'syncs with a user' do
     user = FactoryGirl.create(:user)
     service = FitbitService.new("9876")
-    allow_any_instance_of(FitbitService).to receive(:get_tokens).and_return({access_token: '1234', refresh_token: '4567'})
+    allow_any_instance_of(FitbitService).to receive(:get_tokens).and_return({access_token: '1234', refresh_token: '4567', user_id: '2'})
 
     service.sync(user)
 
     expect(user.fitbit_access_token).to eq('1234')
     expect(user.fitbit_refresh_token).to eq('4567')
+    expect(user.fitbit_id).to eq('2')
   end
 
   it 'imports workouts' do
     user = FactoryGirl.create(:user, 
-                              last_logged_in: Date.today,
                               fitbit_access_token: '1234',
-                              fitbit_refresh_token: '4567'
+                              fitbit_refresh_token: '4567',
+                              fitbit_id: '2'
                              )
     service = FitbitService.new
-    allow_any_instance_of(FitbitService).to recieve(:workouts_for_day).and_return({
+    allow_any_instance_of(FitbitService).to receive(:workouts_for_day).and_return({
       activities:[
           {
               activityId:51007,
