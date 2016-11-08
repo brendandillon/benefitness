@@ -13,13 +13,14 @@ class WorkoutsController < ApplicationController
   end
 
   def index
-    @workouts = current_user.workouts
+    @workouts = current_user.workouts.where('date > ?', Date.today - 7)
+    @total_distance = @workouts.sum(:distance)
   end
 
   private
     def workout_params
       params.require(:workout)
-            .permit(:activity_id, :distance, :calories_burned)
+            .permit(:activity_id, :distance, :calories_burned, :date)
             .merge(time_elapsed: minutes_elapsed)
             .merge(user_id: current_user.id)
     end

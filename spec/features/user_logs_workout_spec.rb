@@ -10,7 +10,7 @@ RSpec.describe "A user logs a workout" do
     click_on 'Log workout'
 
     select 'Running', from: 'workout_activity_id'
-    # Test date picker
+    fill_in 'workout_date', with: Date.today
     fill_in 'workout_distance', with: '6'
     fill_in 'workout_time_elapsed_minutes', with: '55'
     fill_in 'workout_calories_burned', with: '200'
