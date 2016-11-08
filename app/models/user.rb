@@ -10,11 +10,10 @@ class User < ApplicationRecord
   end
 
   def last_workout
-    # once we have dates on workouts, change this from created_at
     if workouts.empty?
       return nil
     end
-    last = workouts.last
+    last = workouts.order(:date).first
     "#{last.distance} mile #{last.activity.name}"
   end
 end
