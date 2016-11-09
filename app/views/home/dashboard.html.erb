@@ -1,6 +1,6 @@
 <div class='row'>
   <div class='six columns'>
-    <h3>Benefitness</h3>
+    <%= image_tag 'benefitness_logo.png', class: 'u-max-full-width logo-header' %>
   </div>
 </div>
 
@@ -9,8 +9,8 @@
     <%= form_for :session, url: sessions_path do |f| %>
       <%= f.text_field :email, placeholder: 'Email', class:'u-full-width' %>
       <%= f.password_field :password, placeholder: 'Password', class:'u-full-width' %>
-      <%= f.submit 'Log in' %>
+      <%= f.submit 'Log in', class: 'u-full-width' %>
+      <%= link_to "Create Account", new_user_path, class: 'button button-primary u-full-width' %>
     <% end %>
-    <%= link_to "Create Account", new_user_path, class: 'button button-primary' %>
   </div>
 </div>

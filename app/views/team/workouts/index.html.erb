@@ -21,8 +21,9 @@
         <%= workout.number_of_likes %>
       </div>
       <div class='two columns'>
-        <%= button_to "Like", workout_likes_path(workout) %>
+        <%= link_to "Like", workout_likes_path(workout), method: :post, class: 'button like' %>
       </div>
     </div>
   </div>
 <% end %>
+

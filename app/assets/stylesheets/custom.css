@@ -1,0 +1,39 @@
+.logo-header {
+  padding: 50px 0;
+}
+
+.workout {
+  background-color: #6AA5E5;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px 10px 0 10px;
+}
+
+ul.navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+li.nav {
+  float: left;
+  width: 33%;
+  margin: 0;
+}
+
+a.nav-link {
+  display: block;
+  padding: 8px;
+  background-color: #333;
+  text-decoration: none;
+  text-align: center;
+  color: white;
+}
+
+.like {
+  background-color: white !important;
+  margin-bottom: 0;
+}
