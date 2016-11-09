@@ -1,7 +1,9 @@
-<%= @workouts.each do |workout| %>
+<% @workouts.each do |workout| %>
   <div class="workout">
     <%= workout.user.full_name %>
     <%= workout.activity.name %>
     <%= workout.distance %> miles
+    <%= workout.number_of_likes %>
+    <%= button_to "Like", workout_likes_path(workout) %>
   </div>
 <% end %>
