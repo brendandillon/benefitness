@@ -8,6 +8,7 @@ class UsersController < ApplicationController
     @user = @team.users.new(user_params)
     if @user.save
       session[:user_id] = @user.id
+      @user.update(last_logged_in: Date.today)
       redirect_to root_path
     else
       render :new
