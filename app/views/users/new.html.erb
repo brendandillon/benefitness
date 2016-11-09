@@ -1,9 +1,17 @@
-<%= form_for @user do |f| %>
-  <%= f.text_field 'first_name', placeholder: 'First name' %>
-  <%= f.text_field 'last_name', placeholder: 'Last name' %>
-  <%= f.text_field 'email', placeholder: 'Email' %>
-  <%= f.password_field 'password', placeholder: 'Password' %>
-  <%= f.password_field 'password_confirmation', placeholder: 'Confirm Password' %>
-  <%= text_field_tag 'team_code', nil, placeholder: 'Team Code' %>
-  <%= f.submit 'Create' %>
-<% end %>
+<div class='row'>
+  <div class='six columns'>
+    <h1>Create Account</h1>
+  </div>
+</div>
+
+<div class="four columns">
+  <%= form_for @user do |f| %>
+    <%= f.text_field 'first_name', placeholder: 'First name', class: 'u-full-width' %>
+    <%= f.text_field 'last_name', placeholder: 'Last name', class: 'u-full-width' %>
+    <%= f.text_field 'email', placeholder: 'Email', class: 'u-full-width' %>
+    <%= f.password_field 'password', placeholder: 'Password', class: 'u-full-width' %>
+    <%= f.password_field 'password_confirmation', placeholder: 'Confirm Password', class: 'u-full-width' %>
+    <%= text_field_tag 'team_code', nil, placeholder: 'Team Code', class: 'u-full-width' %>
+    <%= f.submit 'Create', class: 'button-primary' %>
+  <% end %>
+</div>

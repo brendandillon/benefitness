@@ -1,5 +1,22 @@
-<h1>My Account</h1>
-<%= current_user.full_name %>
-<%= current_user.team.name %>
-<%= link_to "Update Account", account_path, method: :put %>
-<%= link_to "Sync with Fitbit", "https://www.fitbit.com/oauth2/authorize?response_type=code&scope=activity&client_id=#{ENV['fitbit_client_id']}" %>
+<div class='row'>
+  <div class='six columns'>
+    <h3>My Account</h3>
+  </div>
+</div>
+<div class='row'>
+  <div class='three columns'>
+    <%= current_user.full_name %>
+  </div>
+</div>
+<div class='row'>
+  <div class='three columns'>
+    <%= current_user.team.name %>
+  </div>
+</div>
+<div class='row'>
+  <div class='three columns'>
+    <%= link_to "Update Account", account_path, method: :put, class: 'button u-full-width' %>
+  </div>
+  <div class='three columns'>
+    <%= link_to "Sync with Fitbit", "https://www.fitbit.com/oauth2/authorize?response_type=code&scope=activity&client_id=#{ENV['fitbit_client_id']}", class: 'button u-full-width' %>
+  </div>
