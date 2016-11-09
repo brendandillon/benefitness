@@ -16,6 +16,7 @@ gem 'bcrypt', '~> 3.1.7'
 gem 'figaro'
 gem 'omniauth'
 gem 'faraday'
+gem 'skeleton-rails', :git => 'https://github.com/helios-technologies/skeleton-rails'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
