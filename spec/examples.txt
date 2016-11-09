@@ -1,16 +1,16 @@
 example_id                                            | status | run_time        |
 ----------------------------------------------------- | ------ | --------------- |
-./spec/features/admin_creates_team_spec.rb[1:1]       | passed | 0.0637 seconds  |
-./spec/features/guest_creates_account_spec.rb[1:1]    | passed | 0.06298 seconds |
-./spec/features/user_likes_team_workouts_spec.rb[1:1] | passed | 0.06832 seconds |
-./spec/features/user_likes_team_workouts_spec.rb[1:2] | passed | 0.07753 seconds |
-./spec/features/user_logs_in_spec.rb[1:1]             | passed | 0.07087 seconds |
-./spec/features/user_logs_out_spec.rb[1:1]            | passed | 0.13834 seconds |
-./spec/features/user_logs_workout_spec.rb[1:1]        | passed | 0.07241 seconds |
-./spec/features/user_sees_dashboard_spec.rb[1:1]      | passed | 0.02772 seconds |
-./spec/features/user_updates_account_spec.rb[1:1]     | passed | 0.12456 seconds |
-./spec/features/user_views_account_spec.rb[1:1]       | passed | 0.11688 seconds |
-./spec/features/user_views_own_workouts_spec.rb[1:1]  | passed | 0.05822 seconds |
-./spec/features/user_views_team_workouts_spec.rb[1:1] | passed | 0.61415 seconds |
-./spec/services/fitbit_service_spec.rb[1:1]           | passed | 0.01247 seconds |
-./spec/services/fitbit_service_spec.rb[1:2]           | passed | 0.01819 seconds |
+./spec/features/admin_creates_team_spec.rb[1:1]       | passed | 0.05732 seconds |
+./spec/features/guest_creates_account_spec.rb[1:1]    | passed | 0.34755 seconds |
+./spec/features/user_likes_team_workouts_spec.rb[1:1] | passed | 0.08357 seconds |
+./spec/features/user_likes_team_workouts_spec.rb[1:2] | passed | 0.07596 seconds |
+./spec/features/user_logs_in_spec.rb[1:1]             | passed | 0.04646 seconds |
+./spec/features/user_logs_out_spec.rb[1:1]            | passed | 0.09995 seconds |
+./spec/features/user_logs_workout_spec.rb[1:1]        | passed | 0.06632 seconds |
+./spec/features/user_sees_dashboard_spec.rb[1:1]      | passed | 0.02502 seconds |
+./spec/features/user_updates_account_spec.rb[1:1]     | passed | 0.11823 seconds |
+./spec/features/user_views_account_spec.rb[1:1]       | passed | 0.03492 seconds |
+./spec/features/user_views_own_workouts_spec.rb[1:1]  | passed | 0.10544 seconds |
+./spec/features/user_views_team_workouts_spec.rb[1:1] | passed | 0.05893 seconds |
+./spec/services/fitbit_service_spec.rb[1:1]           | passed | 0.01332 seconds |
+./spec/services/fitbit_service_spec.rb[1:2]           | passed | 0.0144 seconds  |

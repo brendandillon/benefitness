@@ -17,6 +17,7 @@ gem 'figaro'
 gem 'omniauth'
 gem 'faraday'
 gem 'skeleton-rails', :git => 'https://github.com/helios-technologies/skeleton-rails'
+gem 'skylight'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
