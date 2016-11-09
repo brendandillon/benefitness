@@ -4,6 +4,6 @@
   <%= f.text_field 'email', placeholder: 'Email' %>
   <%= f.password_field 'password', placeholder: 'Password' %>
   <%= f.password_field 'password_confirmation', placeholder: 'Confirm Password' %>
-  <%= text_field_tag 'team_code', placeholder: 'Team Code' %>
+  <%= text_field_tag 'team_code', nil, placeholder: 'Team Code' %>
   <%= f.submit 'Create' %>
 <% end %>
