@@ -1,6 +1,16 @@
-<%= form_for :session, url: sessions_path do |f| %>
-  <%= f.text_field :email, placeholder: 'Email' %>
-  <%= f.password_field :password, placeholder: 'Password' %>
-  <%= f.submit 'Log in' %>
-<% end %>
-<%= link_to "Create Account", new_user_path %>
+<div class='row'>
+  <div class='six columns'>
+    <%= image_tag 'benefitness_logo.png', class: 'u-max-full-width logo-header' %>
+  </div>
+</div>
+
+<div class='row'>
+  <div class="four columns">
+    <%= form_for :session, url: sessions_path do |f| %>
+      <%= f.text_field :email, placeholder: 'Email', class:'u-full-width' %>
+      <%= f.password_field :password, placeholder: 'Password', class:'u-full-width' %>
+      <%= f.submit 'Log in', class: 'u-full-width' %>
+      <%= link_to "Create Account", new_user_path, class: 'button button-primary u-full-width' %>
+    <% end %>
+  </div>
+</div>

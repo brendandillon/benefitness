@@ -1,9 +1,29 @@
+<div class='row'>
+  <div class='six columns'>
+    <h3>Team Workouts</h3>
+  </div>
+</div>
 <% @workouts.each do |workout| %>
   <div class="workout">
-    <%= workout.user.full_name %>
-    <%= workout.activity.name %>
-    <%= workout.distance %> miles
-    <%= workout.number_of_likes %>
-    <%= button_to "Like", workout_likes_path(workout) %>
+    <div class='row'>
+      <div class='three columns'>
+        <%= workout.user.full_name %>
+      </div>
+    </div>
+    <div class='row'>
+      <div class='four columns'>
+        <%= workout.activity.name %> - 
+        <%= workout.distance %> miles
+      </div>
+    </div>
+    <div class='row'>
+      <div class='two columns'>
+        <%= workout.number_of_likes %>
+      </div>
+      <div class='two columns'>
+        <%= link_to "Like", workout_likes_path(workout), method: :post, class: 'button like' %>
+      </div>
+    </div>
   </div>
 <% end %>
+

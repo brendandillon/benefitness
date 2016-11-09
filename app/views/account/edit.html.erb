@@ -1,6 +1,13 @@
-<%= form_for @user do |f| %>
-  <%= f.text_field 'first_name', placeholder: 'First name' %>
-  <%= f.text_field 'last_name', placeholder: 'Last name' %>
-  <%= f.text_field 'email', placeholder: 'Email' %>
-  <%= f.submit 'Update' %>
-<% end %>
+<div class='row'>
+  <div class='six columns'>
+    <h3>Update Account<h3>
+  </div>
+</div>
+<div class="four columns">
+  <%= form_for @user do |f| %>
+    <%= f.text_field 'first_name', placeholder: 'First name', class:'u-full-width' %>
+    <%= f.text_field 'last_name', placeholder: 'Last name', class:'u-full-width' %>
+    <%= f.text_field 'email', placeholder: 'Email', class:'u-full-width' %>
+    <%= f.submit 'Update', class: 'button-primary' %>
+  <% end %>
+</div>
